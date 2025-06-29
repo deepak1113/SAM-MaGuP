@@ -8,7 +8,7 @@ Polyp segmentation is a critical task for early detection of colorectal cancer, 
 - Leverages a unique **1D-2D Mamba adapter** for multi-scale feature fusion.
 - Achieves state-of-the-art results across five diverse benchmark datasets.
 
-![Framework](path/to/your/image.png)
+![Framework](SAM-MaGuP.jpg)
 
 ---
 
