@@ -1,4 +1,4 @@
-# 🎯 **SAM-MaGuP**: Mamba-Guided Boundary Prior for Polyp Segmentation 🚀  
+# 🎯 [MICCAI'25] 🏆 **SAM-MaGuP**: Mamba-Guided Boundary Prior for Polyp Segmentation 🚀  
 
 ## 🌟 Overview  
 Detecting colorectal polyps with precision is critical for early cancer detection, yet challenges like blurry boundaries and variable polyp shapes make this task complex. **SAM-MaGuP** is a groundbreaking framework that supercharges the **Segment Anything Model (SAM)** with advanced boundary-focused innovations.  
