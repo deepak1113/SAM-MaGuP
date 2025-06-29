@@ -1,58 +1,61 @@
-# SAM-MaGuP: Mamba Guided Boundary Prior for Generalized Polyp Segmentation
+# 🎯 **SAM-MaGuP**: Mamba-Guided Boundary Prior for Polyp Segmentation 🚀  
 
-## Overview
-Polyp segmentation is a critical task for early detection of colorectal cancer, but challenges like weak or blurry boundaries make it a demanding problem. SAM-MaGuP introduces a novel approach to robust polyp segmentation by enhancing the **Segment Anything Model (SAM)** with boundary-focused innovations.  
+## 🌟 Overview  
+Detecting colorectal polyps with precision is critical for early cancer detection, yet challenges like blurry boundaries and variable polyp shapes make this task complex. **SAM-MaGuP** is a groundbreaking framework that supercharges the **Segment Anything Model (SAM)** with advanced boundary-focused innovations.  
 
-**Key Features:**
-- Incorporates a **Boundary Distillation Component (BDC)** to refine weak boundary details.
-- Leverages a unique **1D-2D Mamba adapter** for multi-scale feature fusion.
-- Achieves state-of-the-art results across five diverse benchmark datasets.
+### 🔑 **Key Features:**  
+- ✨ **Boundary Distillation Component (BDC):** Refines weak boundaries for superior accuracy.  
+- 🔍 **1D-2D Mamba Adapter:** Bridges spatial and channel dependencies at multiple scales.  
+- 🏆 **State-of-the-Art Performance:** Excels across five benchmark datasets.  
 
-![Framework](SAM-MaGuP.jpg)
-
----
-
-## Highlights
-- **Boundary Distillation:** Sharpens model focus on ambiguous or weakly defined regions.
-- **1D-2D Mamba Adapter:** Captures long-range dependencies across spatial and channel dimensions.
-- **Multi-Scale Refinement:** Enhances SAM’s feature representation for improved accuracy.
-- **Robust Performance:** Outperforms existing methods on seen and unseen datasets with unmatched segmentation precision.
+![SAM-MaGuP Framework](SAM-MaGuP.jpg)  
 
 ---
 
-## Architecture
-SAM-MaGuP consists of:
-1. **MaGuP Module:** A plug-in adapter for SAM, combining:
-   - **Multi-scale Spatial Decomposition (MSD):** Extracts coarse-to-fine polyp features.
-   - **Boundary Distillation Component (BDC):** Refines polyp boundaries using cross-attention mechanisms.
-2. **SAM Backbone:** Augmented with domain-specific knowledge for medical image segmentation.
+## 💡 Highlights  
+- 🧠 **Boundary Refinement:** Tackles low-contrast regions with precision.  
+- 🌐 **Multi-Scale Context:** Captures long-range dependencies for robust segmentation.  
+- ⚡ **Generalization Power:** Handles unseen datasets with unmatched accuracy.  
+- 🎯 **Clinical Relevance:** Designed for real-world medical applications.  
 
 ---
 
-## Results
-### Quantitative Metrics
-SAM-MaGuP sets a new benchmark in segmentation accuracy across datasets like Kvasir-SEG, ETIS, and ClinicDB. It consistently achieves:
-- **mDice:** 94.7% on seen datasets.
-- **mIoU:** 89.0% on Kvasir-SEG.
-- **Boundary Precision:** 85.4% on challenging ETIS dataset.
-
-### Qualitative Improvements
-- Precisely segments intricate polyp boundaries, even in low-contrast regions.
-- Strong generalization capability on unseen datasets.
+## 🛠️ Architecture  
+**SAM-MaGuP** combines:  
+1. **MaGuP Module:**  
+   - **Multi-scale Spatial Decomposition (MSD):** Extracts coarse-to-fine polyp features.  
+   - **Boundary Distillation Component (BDC):** Enhances polyp boundary recognition with cross-attention.  
+2. **SAM Backbone:** Enhanced with domain-specific knowledge for medical imaging.  
 
 ---
 
-## Getting Started
-### Prerequisites
-- **Python:** >= 3.8
-- **PyTorch:** >= 2.0
-- **CUDA:** Enabled GPU (e.g., NVIDIA A100)
+## 📊 Results  
 
-### STEPS
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/username/SAM-MaGuP.git
-   cd SAM-MaGuP
+### **🚀 Quantitative Metrics:**  
+SAM-MaGuP sets new benchmarks across diverse datasets:  
+- **mDice:** 94.7% on seen datasets.  
+- **mIoU:** 89.0% on Kvasir-SEG.  
+- **Boundary Precision:** 85.4% on challenging ETIS dataset.  
+
+### **🖼️ Qualitative Improvements:**  
+- Accurate polyp segmentation, even in ambiguous regions.  
+- Strong performance on unseen datasets.  
+
+---
+
+## 🚀 Getting Started  
+
+### Prerequisites  
+- **Python:** >= 3.8  
+- **PyTorch:** >= 2.0  
+- **CUDA:** Enabled GPU (e.g., NVIDIA A100)  
+
+### Installation  
+1. Clone the repository:  
+   ```bash  
+   git clone https://github.com/username/SAM-MaGuP.git  
+   cd SAM-MaGuP  
+
 2. Install dependencies:
    ```bash
     pip install -r requirements.txt
@@ -75,9 +78,11 @@ SAM-MaGuP sets a new benchmark in segmentation accuracy across datasets like Kva
 6. Run the inference script:
    ```bash
      python test.py --input data/test_images --output results/
-###Citation
+### Training and Inference Code Coming Soon, Stay Tuned !
+
+### Citation
 If you use this code or framework, please cite:
-```bash
+```bibtex
 @inproceedings{SAM-MaGuP,
   title={Mamba Guided Boundary Prior Matters: A New Perspective for Generalized Polyp Segmentation},
   author={Dutta, Tapas K. and Majhi, Snehashis and Nayak, Deepak Ranjan and Jha, Debesh},
